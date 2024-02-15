@@ -85,9 +85,9 @@ calcFactorial(5); // 120
 
 */
 
-function addWithLoss(num1, num2, znak) {
+function addWithLoss(num1, num2, roundValue) {
   sum = num1 + num2;
-  return +sum.toFixed(znak);
+  return +sum.toFixed(roundValue);
 }
 
 console.log(addWithLoss(1.5, 2.235, 2)); // 3.73
