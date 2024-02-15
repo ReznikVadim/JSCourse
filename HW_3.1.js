@@ -140,8 +140,6 @@ console.log(processText(" ZDAROVA!   ")); //zdXrovX!
 
  */
 
-//1
-
 function encodeString(inputText, key) {
   let encodedResult = "";
 
@@ -152,10 +150,6 @@ function encodeString(inputText, key) {
   }
   return encodedResult;
 }
-
-console.log(encodeString("Hello, World!", 5));
-
-//2.
 
 function decodeString(encodedText, key) {
   let decodedResult = "";
@@ -169,4 +163,7 @@ function decodeString(encodedText, key) {
   return decodedResult;
 }
 
-console.log(decodeString("Mjqqt1%\twqi&", 5));
+const key = 5;
+const encoded = encodeString("Hello, World!", key);
+const decoded = decodeString(encoded, key);
+console.log(encoded, decoded);
