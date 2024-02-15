@@ -111,8 +111,7 @@ processText("Another Example");
 */
 
 function processText(text) {
-  text = text.trim().toLowerCase().replaceAll("a", "X");
-  return text;
+  return text.trim().toLowerCase().replaceAll("a", "X");
 }
 
 console.log(processText(" ZDAROVA!   ")); //zdXrovX!
