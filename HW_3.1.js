@@ -84,7 +84,7 @@ calcFactorial(5); // 120
  // Вывод: 3 (вместо ожидаемого 3.003)
 
 */
-
+//sjdj
 function addWithLoss(num1, num2, roundValue) {
   sum = num1 + num2;
   return +sum.toFixed(roundValue);
