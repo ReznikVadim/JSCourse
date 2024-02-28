@@ -105,8 +105,12 @@ const _a5: string = a5(...["lalaka", "malaka"]);
 function a1(a: number) {}
 function a2(a: number | string, b: boolean) {}
 function a3(a?: { f1?: string }) {}
-function a4(): number[];
-function a5() {}
+function a4(): number {
+  return 5;
+}
+function a5(...a: string[]): string {
+  return "";
+}
 
 a1(10);
 a1(5 + 2);
