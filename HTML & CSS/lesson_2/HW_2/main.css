@@ -1,0 +1,304 @@
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: Inter-bold;
+  src: url(fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: Forum;
+  src: url(fonts/Forum.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #0c0c0e;
+  height: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 2%;
+  font-family: Forum;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.navTable {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.navTable ul li:hover {
+  transform: scale(1.1);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.iconProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  position: relative;
+  display: flex;
+  height: 600px;
+  background-image: url(assets/welcome.png);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+}
+
+.welcome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+  background: linear-gradient(#0c0c0e, transparent);
+}
+
+.burger_icon {
+  display: none;
+  width: 45px;
+  height: 20px;
+}
+
+.title {
+  color: white;
+  font-family: Forum;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 3px;
+  background: #0c0c0e;
+  padding: 35px 40px;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-family: Forum;
+  line-height: 40px;
+  letter-spacing: 2px;
+  padding-top: 20px;
+  color: #0c0c0e;
+  font-size: 40px;
+  text-align: center;
+}
+
+.border_line_about {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 50px;
+  height: 1px;
+  background: #0c0c0e;
+  margin-top: 30px;
+  margin-bottom: 55px;
+  margin: 30px auto 55px;
+}
+
+.text_about {
+  text-align: center;
+  font-size: 20px;
+  color: #0c0c0e;
+  font-family: Inter;
+  line-height: 40px;
+  letter-spacing: 0%;
+}
+
+.img_about {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 25px;
+}
+
+.item_img {
+  height: 97.72%;
+  width: 31.25%;
+}
+
+.round_buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.active_button {
+  background: #bb945f;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.secondary_buttons {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #0c0c0e;
+  cursor: pointer;
+}
+
+.transparent_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.footer_wrap {
+  padding: 20px 20px 60px;
+  background: #0c0c0e;
+}
+
+.main_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer_address {
+  font-family: Inter;
+  font-size: 15;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.foter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.smm_icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer_schedule {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.text_end {
+  text-align: end;
+}
+
+.border_line_footer {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  margin-top: 15px;
+  margin-bottom: 46px;
+}
+
+.footer_line3 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.buttons_on_mobile {
+  display: none;
+}
+
+.img_on_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .buttons_on_mobile {
+    display: flex;
+  }
+
+  .img_on_mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .img_about {
+    overflow: hidden;
+    width: 450px;
+    max-width: 100%;
+  }
+
+  .item_img {
+    width: 100%;
+  }
+
+  .burger_icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .navTable {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
