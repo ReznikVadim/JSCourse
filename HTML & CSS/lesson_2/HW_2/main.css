@@ -34,7 +34,7 @@ h1 {
   font-weight: 400;
   font-size: 30px;
   line-height: 50px;
-  letter-spacing: 2%;
+  letter-spacing: 0.6px;
   font-family: Forum;
 }
 
@@ -99,13 +99,18 @@ ul {
 }
 
 .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 220px;
+  margin-top: 56px;
   color: white;
   font-family: Forum;
   font-size: 40px;
   line-height: 50px;
   letter-spacing: 3px;
   background: #0c0c0e;
-  padding: 35px 40px;
   text-align: center;
 }
 
@@ -135,7 +140,7 @@ h2 {
   background: #0c0c0e;
   margin-top: 30px;
   margin-bottom: 55px;
-  margin: 30px auto 55px;
+  margin: 20px 0px 10px 30px;
 }
 
 .text_about {
@@ -145,13 +150,15 @@ h2 {
   font-family: Inter;
   line-height: 40px;
   letter-spacing: 0%;
+  padding-top: 30px;
 }
 
 .img_about {
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
   justify-content: center;
   gap: 25px;
+  width: 100%;
 }
 
 .item_img {
@@ -210,7 +217,7 @@ a {
 
 .footer_address {
   font-family: Inter;
-  font-size: 15;
+  font-size: 15px;
   line-height: 20px;
   letter-spacing: 0%;
 }
@@ -222,8 +229,11 @@ a {
 
 .smm_icons {
   display: flex;
-  gap: 15px;
   margin-top: 10px;
+}
+
+.smm_icons ul {
+  gap: 20px;
 }
 
 .footer_schedule {
@@ -242,11 +252,12 @@ a {
   width: 100%;
   height: 1px;
   background: #fff;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 46px;
 }
 
 .footer_line3 {
+  flex: 0 1 100%;
   color: #fff;
   font-family: Inter;
   font-size: 20px;
@@ -257,6 +268,14 @@ a {
   letter-spacing: 2px;
 }
 
+.item2 {
+  text-align: center;
+}
+
+.item3 {
+  text-align: right;
+}
+
 .buttons_on_mobile {
   display: none;
 }
@@ -265,9 +284,22 @@ a {
   display: none;
 }
 
+/* .item2 {
+  padding-left: 50px;
+} */
+
 @media screen and (max-width: 1024px) {
   .buttons_on_mobile {
     display: flex;
+  }
+
+  .round_buttons {
+    margin-top: 24px;
+  }
+
+  .text_about {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .img_on_mobile {
@@ -302,3 +334,7 @@ a {
     cursor: pointer;
   }
 }
+
+/* .item2 {
+  padding-right: 50px;
+} */
