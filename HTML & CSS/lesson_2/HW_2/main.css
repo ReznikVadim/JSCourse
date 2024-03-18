@@ -121,6 +121,124 @@ ul {
   margin-bottom: 35px;
 }
 
+.favorites {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px 60px;
+}
+
+.favorites {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 60px 60px;
+}
+
+.favorites_text {
+  font-size: 20px;
+  font-family: Inter-bold;
+}
+
+.border_line_favorites {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 50px;
+  height: 1px;
+  background: #0c0c0e;
+  margin-top: 30px;
+  margin-bottom: 55px;
+  margin: 20px 0px 0px 10px;
+}
+
+.img_favorites {
+  /* display: flex; */
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+}
+
+.radio_wrap {
+  display: flex;
+  gap: 90px;
+  margin-top: 40px;
+}
+
+input[type="radio"] {
+  accent-color: black;
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 220px;
+  margin-top: 40px;
+}
+
+.book {
+  position: relative;
+  width: calc(50% - 110px);
+  padding: 4px 170px 20px 20px;
+  border: 1px solid #000;
+}
+
+.staff_picks {
+  font-family: Forum;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.staff_picks_line {
+  background-color: #bb945f;
+  width: 60px;
+  height: 0.5px;
+}
+
+.book_title {
+  margin-top: 30px;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.book_subtitle {
+  margin-bottom: 20px;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.book_description {
+  margin-bottom: 20px;
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+.book_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.book_img {
+  width: 200px;
+  position: absolute;
+  bottom: -1px;
+  right: -40px;
+}
+
 h2 {
   font-family: Forum;
   line-height: 40px;
@@ -332,6 +450,10 @@ a {
     display: flex;
     align-items: center;
     cursor: pointer;
+  }
+
+  .book {
+    width: 100%;
   }
 }
 
